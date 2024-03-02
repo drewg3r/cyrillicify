@@ -3,10 +3,14 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js}",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
+  darkMode: 'selector',
 }
 
